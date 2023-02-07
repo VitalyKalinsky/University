@@ -1,20 +1,22 @@
-public class Main {
-    public static void main(String[] args) {
-        String eng = "Java";
-        String en = "Java";
-        String regex = "[a-zA-z]";
-        String reg1 = "_";
-        String reg2 = "\\d";
-        System.out.println("true: " + checkAuth(eng));
-        System.out.println(eng.matches(".*\\d.*") && eng.matches(".*\\w*.*") && eng.matches(".*_*.*"));
-        System.out.println(eng.matches(".*\\d+.*"));
-        System.out.println(eng.matches(".*\\w+.*"));
-        System.out.println(eng.matches(".*_+.*"));
-        System.out.println("false: " + checkAuth(en));
-    }
+import java.util.*;
+import java.util.function.BinaryOperator;
+import java.util.stream.Collectors;
 
-    public static boolean check(String login) {
-        return !(login.contains("_") && login.contains("\\d") && login.contains("[a-zA-Z]"));
+public class Main {
+
+    public static final List<String> STRING_LIST = Arrays.asList(
+            "Onee",
+            "tWo",
+            "list",
+            "windoWWW",
+            "user authorization was successful",
+            "this is A complex strUcture",
+            "and who are the judges",
+            "The ArrayList class supports dynamic arrays",
+            "the arraylist class inherits from the abstractList class"
+    );
+
+    public static void main(String[] args) {
     }
 
     public static boolean checkAuth(String login) {
