@@ -23,11 +23,6 @@ public class Main {
     );
 
     public static void main(String[] args) {
-        int i = (int) FULL_NAMES.stream()
-                .flatMap(el -> Arrays.stream(el.split(" ")))
-                .filter(el -> el.length() > 5)
-                .distinct()
-                .count();
-        System.out.println(i);
+
     }
 }
