@@ -59,12 +59,6 @@ public class MyLinkedList<E> {
         return true;
     }
     public void add(int index, E element) {
-//        Node after = getNode(index);
-//        getNode(index - 1).next = null;
-//        add(element);
-//        getNode(index).next = after;
-//        System.out.println(after.element);
-
         Node current = new Node(element);
         if(index <= 0) {
             current.next = head;
