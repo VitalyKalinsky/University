@@ -1,16 +1,13 @@
-import module3.HW2.MyLinkedList;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        MyLinkedList<Integer> linkedList = new MyLinkedList<>();
-        for (int i = 0; i < 15; i++)
-            linkedList.add(i);
-        int index = 14;
-        System.out.println(linkedList);
-        linkedList.add(index, 10123);
-        System.out.println(linkedList);
-        linkedList.remove(index);
-        System.out.println(linkedList);
+        List list = new ArrayList();
+        list.add("Hello");
+        list.add(123);
+        System.out.println(list.get(0));
+        System.out.println((String) list.get(1));
     }
 }
